@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* navbar */
+
+nav {
+    width: 100vw;
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    /* display: flex; */
+    /* width: 70%; */
+    /* margin-left: 10%; */
+    /* justify-content: space-around; */
+    /* display: grid;
+    grid-auto-columns: auto; */
+}
+
+.nav-list > li > a{
+    text-decoration: none;
+    color: #000000;
+    font-size: medium;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.nav-list > li > a:hover {
+    color: #C850C0;
+}
+
+.navIcons-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.navIcons-list > li > a > img {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 15px;
+}
+
+.navIcons-list > li > a > img:hover {
+    scale: 1.25;
+}
+
+main {
+    background-image: linear-gradient(to right, #C850C0, #FFCC70);
+    padding-bottom: 1rem;
+
+}
+
+/* hero section */
+
+#hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.hero-img-container {
+    overflow: none;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.hero-img-container > img {
+    max-width: 100%;
+    height: max-content;
+}
+
+.lorem {
+    position: absolute;
+    width: 80%;
+    background-color: #f46565;
+    opacity: 0.5;
+    padding: 0.3rem;
+}
+
+.lorem > h1 {
+    text-align: center;
+    font-size: small;
+    margin: 0;
+}
+
+.lorem > p {
+    font-size: smaller;
+}
+
+/* order section  */
+
+.item-card {
+    max-width: 100%;
+    height: auto;
+    background-color: #ffff;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0 2rem;
+}
+
+.item-card > img {
+    width: 100%;
+    height: auto;
+    border-radius: 0 2rem 0 0 ;
+}
+
+.item-card > h3{
+    font-size: medium;
+}
+
+.item-card > p {
+    font-size: small;
+}
+
+#order-btn {
+    display: block;
+    border: none;
+    padding: 0.5rem 2rem;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    border-radius: 2rem;
+    background-color: rgba(250, 235, 215, 0.4);
+    color: #000000;
+    font-weight: bold;
+    margin: 3rem auto;
+}
+
+#order-btn:hover {
+    scale: 1.2;
+    color: #6a0864;
+}
