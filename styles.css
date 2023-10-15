@@ -1,144 +1,281 @@
 body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 /* navbar */
 
 nav {
-    width: 100vw;
-    display: flex;
-    position: sticky;
-    justify-content: space-between;
-    align-items: center;
+  width: 100vw;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-list {
-    list-style-type: none;
-    /* display: flex; */
-    /* width: 70%; */
-    /* margin-left: 10%; */
-    /* justify-content: space-around; */
-    /* display: grid;
-    grid-auto-columns: auto; */
+  list-style-type: none;
 }
 
-.nav-list > li > a{
-    text-decoration: none;
-    color: #000000;
-    font-size: medium;
-    font-weight: 500;
-    letter-spacing: 3px;
+.nav-list > li > a {
+  text-decoration: none;
+  color: #000000;
+  font-size: medium;
+  font-weight: 500;
+  letter-spacing: 3px;
 }
 
 .nav-list > li > a:hover {
-    color: #C850C0;
+  color: #c850c0;
+  font-weight: bolder;
 }
 
-.navIcons-list {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 1;
+.nav-icons-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
 }
 
-.navIcons-list > li > a > img {
-    width: 3rem;
-    height: 3rem;
-    margin-left: 15px;
+.nav-icons-list > li > a > img {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 15px;
 }
 
-.navIcons-list > li > a > img:hover {
-    scale: 1.25;
+.nav-icons-list > li > a > img:hover {
+  scale: 1.25;
 }
 
 main {
-    background-image: linear-gradient(to right, #C850C0, #FFCC70);
-    padding-bottom: 1rem;
-
+  background-image: linear-gradient(to right, #c850c0, #ffcc70);
+  padding-bottom: 1rem;
 }
 
 /* hero section */
 
 #hero-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
 .hero-img-container {
-    overflow: none;
-    max-width: 100%;
-    height: auto;
-    position: relative;
+  overflow: none;
+  max-width: 100%;
+  height: auto;
+  position: relative;
 }
 
 .hero-img-container > img {
-    max-width: 100%;
-    height: max-content;
+  max-width: 100%;
+  height: max-content;
 }
 
 .lorem {
-    position: absolute;
-    width: 80%;
-    background-color: #f46565;
-    opacity: 0.5;
-    padding: 0.3rem;
+  position: absolute;
+  width: 80%;
+  background-color: rgba(244, 101, 101, 0.7);
+  padding: 0.3rem;
 }
 
 .lorem > h1 {
-    text-align: center;
-    font-size: small;
-    margin: 0;
+  text-align: center;
+  font-size: small;
+  margin: 0;
+  color: #ffff;
+  font-family: sans-serif;
+  letter-spacing: 2px;
 }
 
 .lorem > p {
-    font-size: smaller;
+  color: #ffff;
+  font-size: smaller;
+  font-family: sans-serif;
+}
+
+#order-now {
+  text-align: center;
+  font-family: sans-serif;
+  color: #ffff;
+  letter-spacing: 2px;
+  font-size: 2rem;
 }
 
 /* order section  */
 
+
+#order-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 .item-card {
-    max-width: 100%;
-    height: auto;
-    background-color: #ffff;
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 0 2rem;
+  max-width: 70%;
+  height: auto;
+  background-color: #ffff;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0 2rem;
 }
 
 .item-card > img {
-    width: 100%;
-    height: auto;
-    border-radius: 0 2rem 0 0 ;
+  width: 100%;
+  height: auto;
+  border-radius: 0 2rem 0 0;
 }
 
-.item-card > h3{
-    font-size: medium;
+.item-card > h3 {
+  font-size: medium;
+  text-align: center;
 }
 
 .item-card > p {
-    font-size: small;
+  font-size: small;
+  text-align: center;
 }
 
 #order-btn {
-    display: block;
-    border: none;
-    padding: 0.5rem 2rem;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
-    border-radius: 2rem;
-    background-color: rgba(250, 235, 215, 0.4);
-    color: #000000;
-    font-weight: bold;
-    margin: 3rem auto;
+  display: block;
+  border: none;
+  padding: 0.5rem 2rem;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border-radius: 2rem;
+  background-color: rgba(250, 235, 215, 0.4);
+  color: #000000;
+  font-weight: bold;
+  margin: 3rem auto;
+  font-family: sans-serif;
 }
 
 #order-btn:hover {
-    scale: 1.2;
-    color: #6a0864;
+  scale: 1.2;
+  color: #6a0864;
+}
+
+/* mobile */
+
+@media screen and (max-width: 300px) {
+  .nav-icons-list > li > a > img {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 5px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .nav-list > li > a {
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: medium;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  #hero-container {
+    flex-direction: column;
+  }
+
+  .lorem {
+    position: relative;
+    opacity: 1;
+    margin-top: 1rem;
+  }
+}
+
+/* tablet */
+
+@media screen and (min-width: 600px) {
+  .nav-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: 10%;
+    justify-content: space-around;
+  }
+
+  .nav-icons-list {
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 2rem;
+  }
+
+  .nav-icons-list > li > a > img {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 15px;
+  }
+
+  .lorem {
+    position: absolute;
+    top: auto;
+    left: 3rem;
+    width: 40%;
+    opacity: 0.7;
+    padding: 2rem;
+  }
+
+  .lorem > h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  .lorem > p {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  #order-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .item-card {
+    max-width: 12.5rem;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    position: fixed;
+    background-color: #ffff;
+    z-index: 10;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+    .lorem {
+        position: absolute;
+        top: auto;
+        left: 20rem;
+        width: 25%;
+        opacity: 0.7;
+        padding: 2rem;
+      }
+}
+
+@media screen and (min-width: 2000px) {
+    .lorem {
+        position: absolute;
+        top: auto;
+        left: 38rem;
+        width: 20%;
+        opacity: 0.7;
+        padding: 2rem;
+      }
 }
